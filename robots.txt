@@ -1,14 +1,17 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive pages
+Disallow: /auth
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow common crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
-Allow: /
+# Sitemap location (update with your actual domain)
+# Sitemap: https://your-domain.vercel.app/sitemap.xml
